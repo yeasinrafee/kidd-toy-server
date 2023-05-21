@@ -45,6 +45,24 @@ async function run() {
     });
     //----------------------------------------------
 
+    // For getting Sub-category data
+    app.get("/alltoys/:text", async (req, res) => {
+      if (
+        req.params.text == "Sports" ||
+        req.params.text == "Regular" ||
+        req.params.text == "Police"
+      ) {
+        const result = await toysCollection
+          .find({ sub_category: req.params.text })
+          .toArray();
+        return res.send(result);
+      }
+      const cursor = toysCollection.find().limit(20);
+      const result = await cursor.toArray();
+      res.send(result);
+    });
+
+    // For getting All data
     app.get("/alltoys", async (req, res) => {
       const cursor = toysCollection.find().limit(20);
       const result = await cursor.toArray();
