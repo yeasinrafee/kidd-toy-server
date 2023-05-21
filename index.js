@@ -28,8 +28,25 @@ async function run() {
 
     const toysCollection = client.db("kiddToY").collection("toys");
 
+    // For doing the Search option: --------
+    const indexKeys = { toy_name: 1 };
+    const indexOptions = { name: "toyName" };
+
+    const result = await toysCollection.createIndex(indexKeys, indexOptions);
+
+    app.get("/search/:text", async (req, res) => {
+      const searchText = req.params.text;
+
+      const result = await toysCollection
+        .find({ toy_name: { $regex: searchText, $options: "i" } })
+        .toArray();
+
+      res.send(result);
+    });
+    //----------------------------------------------
+
     app.get("/alltoys", async (req, res) => {
-      const cursor = toysCollection.find();
+      const cursor = toysCollection.find().limit(20);
       const result = await cursor.toArray();
       res.send(result);
     });
