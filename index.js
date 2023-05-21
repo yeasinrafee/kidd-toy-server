@@ -51,6 +51,13 @@ async function run() {
       res.send(result);
     });
 
+    app.post("/alltoys", async (req, res) => {
+      const toys = req.body;
+      console.log(toys);
+      const result = await toysCollection.insertOne(toys);
+      res.send(result);
+    });
+
     app.get("/toys/:id", async (req, res) => {
       const id = req.params.id;
       const query = { _id: new ObjectId(id) };
