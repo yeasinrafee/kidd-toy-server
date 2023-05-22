@@ -1,10 +1,11 @@
 # b7a11-toy-marketplace-server-side-yeasinrafee
+
 b7a11-toy-marketplace-server-side-yeasinrafee created by GitHub Classroom
 
 ## Complete Project
 
-Github Repo (Client) -> [KiddToY-github](https://github.com/programming-hero-web-course-4/b7a10-chef-recipe-hunter-client-side-yeasinrafee) </br>
-Github Repo (Server) -> [KiddToY-github](https://github.com/programming-hero-web-course-4/b7a10-chef-recipe-hunter-server-side-yeasinrafee)
+Github Repo (Client) -> [KiddToY-github](https://github.com/programming-hero-web-course-4/b7a11-toy-marketplace-client-side-yeasinrafee) </br>
+Github Repo (Server) -> [KiddToY-github](https://github.com/programming-hero-web-course-4/b7a11-toy-marketplace-server-side-yeasinrafee)
 
 ## Live Link
 
@@ -13,6 +14,7 @@ Hosted in Firebase -> [KiddToY](https://hungry-chef-client.web.app/)
 # Features
 
 - Single Page Application
+- Full Stack CURD Application
 - Dynamic Website
 - Email Password Authentication
 - Google Authentication
