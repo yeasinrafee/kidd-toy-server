@@ -9,7 +9,7 @@ Github Repo (Server) -> [KiddToY-github](https://github.com/programming-hero-web
 
 ## Live Link
 
-Hosted in Firebase -> [KiddToY](https://hungry-chef-client.web.app/)
+Hosted in Firebase -> [KiddToY](https://kidd-toy-client.web.app/)
 
 # Features
 
@@ -25,11 +25,11 @@ Hosted in Firebase -> [KiddToY](https://hungry-chef-client.web.app/)
 - Using Animation on UI
 
 * Show Blogs
-* Authenticaton
+* Authentication
 
 ## API
 
-Documentation Link -> [KiddToY API](https://hungry-chef-server-yeasinrafee.vercel.app/chefs)
+Documentation Link -> [KiddToY API](https://assignment11-xi.vercel.app/alltoys)
 
 ## React Router Dom v6.4
 
@@ -38,3 +38,7 @@ Documentation Link -> [Link](https://reactrouter.com/en/main/start/overview)
 ## Tailwind
 
 Documentation Link -> [Link](https://tailwindcss.com/docs/installation)
+
+## Daisy UI
+
+Documentation Link -> [Link](https://daisyui.com/)
