@@ -71,7 +71,6 @@ async function run() {
 
     app.post("/alltoys", async (req, res) => {
       const toys = req.body;
-      console.log(toys);
       const result = await toysCollection.insertOne(toys);
       res.send(result);
     });
@@ -79,9 +78,12 @@ async function run() {
     // For getting My Toys
     app.get("/myToys/:email", async (req, res) => {
       const result = await toysCollection
-        .find({
-          seller_email: req.params.email,
-        })
+        .find(
+          {
+            seller_email: req.params.email,
+          },
+          { sort: { price: 1 } }
+        )
         .toArray();
       res.send(result);
     });
