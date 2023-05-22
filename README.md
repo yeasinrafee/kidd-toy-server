@@ -9,7 +9,7 @@ Github Repo (Server) -> [KiddToY-github](https://github.com/programming-hero-web
 
 ## Live Link
 
-Hosted in Firebase -> [KiddToY](https://kidd-toy-client.web.app/)
+Hosted in Firebase (Live Link) -> [KiddToY](https://kidd-toy-client.web.app/)
 
 # Features
 
